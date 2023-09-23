@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 
 //include ('connect.php');
 
-$cmd5 = md5($contrasena);
+$cmd5 = $contrasena;
 $sql = "SELECT * FROM usuarios WHERE login='$usuario' and password = '$cmd5'";
 
 
